@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="degradado">
+    <ion-title>Monster INC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding"> 
+  <ion-img src="assets/images/login.svg"></ion-img>
+  <ion-item class="input">
+    <ion-input [(ngModel)]="mdl_usuario" label="Usuario" 
+    labelPlacement="floating" 
+      placeholder="Ingrese su Usuario"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top input">
+    <ion-input [(ngModel)]="mdl_contrasena" type="password" 
+    label="Contraseña" labelPlacement="floating" 
+      placeholder="Ingrese su Contraseña"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="login()" expand="block" class="degradado 
+  ion-margin-top boton"> Ingresar </ion-button>
+  <ion-button (click)="navegarCrearUsuario()" expand="block" color="degradado"
+  class="ion-margin-top boton"> Registrar Usuario </ion-button>
+  </ion-content>

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="degradado">
+    <ion-title> Principal </ion-title>
+
+
+  <ion-buttons slot="end">
+    <ion-button (click)="navegarCambiarContrasena()">
+      <ion-icon name="create-outline" slot="icon-only"></ion-icon> 
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ nombre }}</ion-card-title>
+      <ion-card-subtitle>{{ apellido }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ correo }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
